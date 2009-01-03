@@ -29,4 +29,13 @@ WriteMakefile(
 		},
 
 	clean  => { FILES    => q|github_creator-*| },
+
+    META_MERGE => {
+        resources => {
+            repository => 'git://github.com/briandfoy/github_creator.git',
+            bugtracker =>
+            'http://rt.cpan.org/NoAuth/Bugs.html?Dist=Git-Github-Creator',
+        },
+
+    },
 	);
